@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src='main.js'></script>
+    <style>
+        .card{
+            border-radius:10%;
+
+        }
+        input{
+            border-radius:10%;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+          <p class="title">
+            Calculator Fun
+          </p>
+          <p class="subtitle">
+            Making Math Easy!
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="column is-one-third is-offset-4">
+            <div class="card has-background-dark">
+                <header class="card-header">
+                  <p class="card-header-title"></p>
+                </header>
+                <div class="card-content">
+                    <input class="input is-static has-background-dark has-text-info-dark" type="text" placeholder="">
+                </div>
+
+
+                <div class="columns">
+                    <div class="column pr-0 is-half"><button id="clear" class="button is-fullwidth is-link">Clear</button></div>
+                    <div class="column pr-0"><button id="posneg" class="button is-fullwidth is-link">+/-</button></div>
+                    <div class="column pr-0"><button id="division" class="button is-fullwidth is-link op">/</button></div>
+                </div>
+                <div class="columns">
+                    <div id="7" class="column pr-0"><button class="button is-fullwidth is-link num">7</button></div>
+                    <div id="8" class="column pr-0"><button class="button is-fullwidth is-link num">8</button></div>
+                    <div id="9" class="column pr-0"><button class="button is-fullwidth is-link num">9</button></div>
+                    <div class="column pr-0"><button id="multiply" class="button is-fullwidth is-link op">x</button></div>
+                </div>
+                <div class="columns">
+                    <div id="4" class="column pr-0"><button class="button is-fullwidth is-link num">4</button></div>
+                    <div id="5" class="column pr-0"><button class="button is-fullwidth is-link num">5</button></div>
+                    <div id="6" class="column pr-0"><button class="button is-fullwidth is-link num">6</button></div>
+                    <div class="column pr-0"><button id="subtract" class="button is-fullwidth is-link op">-</button></div>
+
+                </div>
+                <div class="columns">
+                    <div id="1" class="column pr-0"><button class="button is-fullwidth is-link num">1</button></div>
+                    <div id="2" class="column pr-0"><button class="button is-fullwidth is-link num">2</button></div>
+                    <div id="3" class="column pr-0"><button class="button is-fullwidth is-link num">3</button></div>
+                    <div id="4" class="column pr-0"><button class="button is-fullwidth is-link op">+</button></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half pr-0"><button class="button is-fullwidth is-link num">0</button></div>
+                    <div class="column pr-0"><button id="float" class="button is-fullwidth is-link">.</button></div>
+                    <div id="evaluate" class="column pr-0"><button class="button is-fullwidth is-link">=</button></div>
+                </div>
+
+              </div>
+        </div>
+
+      </section>
+</body>
+</html>
